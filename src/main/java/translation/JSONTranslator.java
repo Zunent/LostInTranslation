@@ -61,9 +61,12 @@ public class JSONTranslator implements Translator {
                         String mapKey = countryCode + '-' + languageCode;
                         translations.put(mapKey, countryData.getString(languageCode));
 
+                        // Erroneously added (?) code.
+                        /*
                         if (!languages.contains(languageCode)) {
                             languages.add(languageCode);
                         }
+                        */
 
                         // Extra code to pass getLanguageCodes test.
                         if (!languageCodes.contains(languageCode)) {
